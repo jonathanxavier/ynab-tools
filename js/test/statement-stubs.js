@@ -274,7 +274,68 @@ define(function() {
 + "24 OUT\n"
 + "Mercado Exito	32,50\n"
 + "24 OUT\n"
-+ "Mercado Exito	38,09\n"
++ "Mercado Exito	38,09\n",
+amex: "American Express}\n" +
+"\n" +
+"Serviços On Line\n" +
+"Sites GlobaisAtendimento ao ClienteFale ConoscoSairInícioExtrato de Conta Membership RewardsEnvio de Extrato de Conta Débito Direto Meu Cadastro\n" +
+"Extrato de Conta\n" +
+"Extrato de Conta Aberto\n" +
+"Extrato de Conta Fechado\n" +
+"Consulta por Período\n" +
+" \n" +
+"EXTRATO DE CONTA FECHADO\n" +
+"Nome do Associado		ZE das COUVES\n" +
+"Associado desde		2007\n" +
+"Número do Cartão		XXXX-XXXXXX - 11001\n" +
+"Período		até 28 de Maio de 2002\n" +
+"VEJA O EXTRATO DE CONTA DE OUTRO CARTÃO\n" +
+"\n" +
+"XXXX-XXXXXX - 12345\n" +
+"\n" +
+" Último extrato de conta fechado\n" +
+" Extrato de Conta para simples conferência. Para mais informações, clique aqui.\n" +
+"Resumo Extrato da Conta	Em Reais\n" +
+"Saldo Anterior	  R$ 3.814,61\n" +
+"Pagamentos / Créditos	  R$ 3.833,76\n" +
+"Despesas / Débitos	  R$ 211.640,48\n" +
+"Saldo Atual	  R$ 3.621,33\n" +
+"Pagamento Mínimo	  R$ 1.621,33\n" +
+"Resumo de Crédito	Em Reais\n" +
+"Limite de Crédito	  R$ 1.600,00\n" +
+"Crédito Disponível	  R$ 188,69\n" +
+"Lançamentos para ZE das COUVES , cartão nº  XXXX-XXXXXX - 12345\n" +
+"Data	Descrição dos Lançamentos no Brasil	Em Reais\n" +
+"24/04/2016	MAGAZINE LUIZA .COM \n" +
+"COMPRA PARCELADA PRESTACAO 02 DE 02	  R$ 1,02\n" +
+"30/04/2016	PAYPAL *MANNING PUB MAN \n" +
+"135.96 Dólar Norte-Americano \n" +
+"Loja de variedades	  R$ 22,61\n" +
+"07/05/2016	GOOGL*PLAY BR \n" +
+"Loja de informática	  R$ 1.234,90\n" +
+"13/05/2016	PAGAMENTO POR DÉBITO DIRETO. OBRIGADO	- R$ 814,61\n" +
+"13/05/2016	REVERSAO IOF SOBRE ATRASO	- R$ 0,63\n" +
+"15/05/2016	CRÉDITO REF VARIAÇÃO CAMBIAL- TAXA: 3,	- R$ 17,41\n" +
+"15/05/2016	CRÉDITO REF VARIAÇÃO DE IOF - TAXA: 3,	- R$ 1,11\n" +
+"15/05/2016	IOF SOBRE ATRASO	  R$ 0,63\n" +
+"15/05/2016	PAYPAL BRAZIL \n" +
+"Marketing Direto outros canais	  R$ 14,90\n" +
+"17/05/2016	SEGURO TOTAL PROTECT \n" +
+"Venda de seguros	  R$ 6,96\n" +
+"27/05/2016	MARISA \n" +
+"Loja de roupas unissex	  R$ 45,98\n" +
+"Total dos Lançamentos em Reais para Maria Jose	  R$ 1.081,29\n" +
+"Este Extrato de Conta destina-se exclusivamente para simples conferência. Para obter documento válido para pagamento faça o download do arquivo em PDF. Para mais informações sobre seu Custo Efetivo Total (CET) entre em contato com o serviço de atendimento a Associados.\n" +
+"\n" +
+"Veja também\n" +
+"Troque seu Extrato de Conta impresso pelo Fatura On-Line, seu Extrato de Conta via e-mail. Além de ser mais prático, rápido e seguro, o meio ambiente agradece.\n" +
+"Confira os extratos de conta fechados de meses anteriores.\n" +
+"Já possui o Adobe® Acrobat® Reader®?Já possui o Adobe® Acrobat® Reader®?\n" +
+"Para baixar e visualizar seu Extrato de Conta Fechado, você precisa ter instalado em seu computador o Adobe® Acrobat® Reader. Você pode fazer o download gratuitamente no site Adobe. Clique aqui.\n" +
+"\n" +
+" https://www.americanexpressonline.com.br/publicBradescoSobre American Express ®Bradesco CartõesMarcas RegistradasConsulte as Normas e RegulamentosNormas de Sigilo e Privacidade\n" +
+"Copyright © 2016 American Express do Brasil\n" +
+".\n"
     }
   }
 });

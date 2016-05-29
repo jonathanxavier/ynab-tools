@@ -116,6 +116,84 @@ define(function () {
 
           // Build the statement object and return
           return new yt.exporting.statement(metadata, statementLines);
+        },
+        amex: function(stringStatement) {
+          // Build statement Lines
+          var startDate = null
+              , endDate = null
+              , statementLines = []
+              , transactionRegex = /(\d+\/\d+\/\d+)(.*)/
+              , singleTransactionRegex =  /(\d+\/\d+\/\d+)(.*)R\$\s+([,.\d]+)/
+              , endTransactionRegex =  /(.*)R\$\s+([,.\d]+)/
+              , transaction = false
+              , extract = null
+              , match = null
+              ;
+
+          var toFloat = function(str) {
+            return parseFloat(str.trim().replace(".", '').replace(',', '.'));
+          };
+
+          var toDate = function(str) {
+            var t = str.split("/");
+            return new Date(t[2], parseInt(t[1]) - 1, t[0]);
+          };
+
+          stringStatement.split("\n").forEach(function(line) {
+            if ((match = transactionRegex.exec(line)) !== null) {
+              var dateObject = new toDate(match[1]);
+
+              if (startDate == null || dateObject < startDate) {
+                startDate = dateObject;
+              }
+              if (endDate == null || dateObject > endDate) {
+                endDate = dateObject;
+              }
+
+              if ((extract = singleTransactionRegex.exec(line)) !== null) {
+                var payee = extract[2].trim(),
+                    category = '',
+                    memo = '',
+                    amount = toFloat(extract[3]);
+
+                if (payee.substr(-1) != '-') {
+                  amount *= -1;
+                }
+
+                ln = new yt.exporting.transaction(dateObject, payee, category, memo, amount);
+                statementLines.push(ln);
+                transaction = null;
+              } else {
+                transaction = {
+                  dateObject: dateObject,
+                  payee:match[2].trim()
+                };
+              }
+            // ends with R$ ..
+            } else if ((match = endTransactionRegex.exec(line)) !== null && transaction) {
+              var payee = transaction.payee,
+                  category = "",
+                  memo = match[1].trim(),
+                  amount = toFloat(match[2]);
+
+                if (payee.substr(-1) != '-') {
+                  amount *= -1;
+                }
+
+              ln = new yt.exporting.transaction(transaction.dateObject, payee, category, memo, amount);
+              statementLines.push(ln);
+              transaction = null;
+            }
+          });
+
+          var metadata = new yt.exporting.metadata();
+
+          metadata.currentDate = new Date();
+          metadata.startDate = startDate;
+          metadata.endDate = endDate;
+
+          // Build the statement object and return
+          return new yt.exporting.statement(metadata, statementLines);
         }
       },
       savings: {

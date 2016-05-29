@@ -47,10 +47,23 @@ define(function(require) {
         expect(transaction.date.getMonth()).to.equal(9); // 9 is october
       })
     });
+    describe('amex statement parsing', function() {
+      it('should correctly generate one transaction', function() {
+        statement = yt.parse.creditCard.amex(statementStubs.creditCard.amex);
+        var transaction = statement.transactions[2]; // I'm getting a random transaction to check
+
+        expect(statement.transactions.length).to.equal(11);
+
+        expect(transaction.payee).to.equal("GOOGL*PLAY BR");
+        expect(transaction.amount).to.equal(-1234.90);
+        expect(transaction.date.getMonth()).to.equal(4); // 4 is May
+      })
+    });
     describe('utils', function() {
       it('should correctly format to ofx date format', function() {
         var dt = new Date('2015-01-03T09:04:07');
         resultingDate = yt.util.ofxDateFormat(dt);
+
         expect(resultingDate).to.equal('20150103090407[-03:EST]');
       })
     });

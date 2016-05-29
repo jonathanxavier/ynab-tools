@@ -98,6 +98,8 @@ define(['app/ynab-tools'], function (yt) {
 					break;
 					case 'nubank-cartao':
 						statement = yt.parse.creditCard.nubank(statementString);
+					case 'amex-cartao':
+						statement = yt.parse.creditCard.amex(statementString);
 					break;
 				}
 
