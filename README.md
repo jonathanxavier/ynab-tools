@@ -1,5 +1,7 @@
 # YNAB Tools
-Quer usar? Não precisa baixar, é só clicar aqui: http://willybarro.github.io/ynab-tools/
+Quer usar? Não precisa baixar, é só clicar aqui: 
+https://htmlpreview.github.io/?https://github.com/jonathanxavier/ynab-tools/blob/master/index.html
+https://cdn.rawgit.com/jonathanxavier/ynab-tools/master/index.html 
 
 # O que é?
 É um conversor que transforma suas faturas em um arquivo que o YNAB consegue ler (.OFX).
