@@ -1,8 +1,6 @@
 # YNAB Tools
 Quer usar? Não precisa baixar, é só clicar aqui: 
-[ynab-tools on htmlpreview](https://htmlpreview.github.io/?https://github.com/jonathanxavier/ynab-tools/blob/master/index.html)
-ou aqui 
-[ynab-tools on rawgit](https://cdn.rawgit.com/jonathanxavier/ynab-tools/master/index.html)
+https://jonathanxavier.github.io/ynab-tools/
 
 # O que é?
 É um conversor que transforma suas faturas em um arquivo que o YNAB consegue ler (.OFX).
